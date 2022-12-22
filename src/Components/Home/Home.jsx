@@ -26,7 +26,6 @@ const Home = () => {
         <div>
             <h1 className='text-center font-bold text-4xl py-12'>Book Your Best One. </h1>
 
-
             <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5 justify-items-center'>
                 {
                     data.map((seat, i) => <BookingCart key={i} seat={seat} refetch={refetch}>
@@ -34,7 +33,6 @@ const Home = () => {
                     </BookingCart>)
                 }
             </div>
-
 
         </div>
     );

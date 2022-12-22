@@ -7,7 +7,7 @@ const Home = () => {
     const { data = [], isLoading, refetch } = useQuery({
         queryKey: ['availableSeats'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/availableSeats');
+            const res = await fetch('https://booking-task-backend.vercel.app/availableSeats');
             const data = await res.json();
             return data;
         }

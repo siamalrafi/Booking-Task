@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { Toaster } from 'react-hot-toast';
 import './App.css';
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='dark:bg-violet-300'>
+      <Navbar />
+
+      <div className="hero h-72">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <h1 className="text-5xl font-bold">Hello there</h1>
+            <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, rerum..</p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <Home></Home>
+
+
+      <Toaster />
     </div>
+
   );
 }
 
